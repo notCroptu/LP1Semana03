@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowTwoUntil", "PowTwoUntil\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamousQuotes", "FamousQuotes\FamousQuotes.csproj", "{8286A24E-F70A-416E-957A-9C004C869E8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS", "RPS\RPS.csproj", "{5C2DE494-2247-4092-B41F-0AAFA045681B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerPowers", "PlayerPowers\PlayerPowers.csproj", "{9F8F3551-A258-4308-9594-5CD598A25865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{8286A24E-F70A-416E-957A-9C004C869E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8286A24E-F70A-416E-957A-9C004C869E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8286A24E-F70A-416E-957A-9C004C869E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2DE494-2247-4092-B41F-0AAFA045681B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2DE494-2247-4092-B41F-0AAFA045681B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2DE494-2247-4092-B41F-0AAFA045681B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2DE494-2247-4092-B41F-0AAFA045681B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8F3551-A258-4308-9594-5CD598A25865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8F3551-A258-4308-9594-5CD598A25865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8F3551-A258-4308-9594-5CD598A25865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8F3551-A258-4308-9594-5CD598A25865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

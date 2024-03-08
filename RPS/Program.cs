@@ -1,4 +1,6 @@
 ﻿using System;
+using RPSGameItem;
+using RPSGameStatus;
 
 namespace RPS
 {
@@ -6,38 +8,41 @@ namespace RPS
     {
         private static void Main(string[] args)
         {
-            int result = RockPaperScissors(args[0], args[1]);
+            GameStatus result = (GameStatus) Enum.Parse(typeof(GameStatus), RockPaperScissors(args[0], args[1]));
+
             switch (result)
             {
-                case 0:
+                case GameStatus.Draw:
                     Console.WriteLine("It's a draw!");
                     break;
-                case 1:
+                case GameStatus.Player1Wins:
                     Console.WriteLine("Player 1 wins!");
                     break;
-                case 2:
+                case GameStatus.Player2Wins:
                     Console.WriteLine("Player 2 wins!");
                     break;
             }
         }
 
-        private static int RockPaperScissors(string player1, string player2)
+        private static string RockPaperScissors(string player1, string player2)
         {
-            int result = -1;
+            GameItem ItemPlayer1 = (GameItem) Enum.Parse(typeof(GameItem), player1);
+            GameItem ItemPlayer2 = (GameItem) Enum.Parse(typeof(GameItem), player2);
+            int PlayerMove = (int)ItemPlayer1 >> 1;
 
-            if (player1 == player2)
+            string result = "none";
+
+            if (ItemPlayer1 == ItemPlayer2)
             {
-                result = 0; // Draw
+                result = "Draw"; // Draw
             }
-            if (((player1 == "Rock") && (player2 == "Scissors")) ||
-                ((player1 == "Scissors") && (player2 == "Paper")) ||
-                ((player1 == "Paper") && (player2 == "Rock")))
+            else if ((PlayerMove == ((int)ItemPlayer2)) || ((PlayerMove == 0) && ((int)ItemPlayer2 == (int)GameItem.Scissors)))
             {
-                result = 1; // Player 1 wins
+                result = "Player1Wins"; // Player 1 wins
             }
             else
             {
-                result = 2; // Player 2 wins
+                result = "Player2Wins"; // Player 2 wins
             }
             return result;
         }

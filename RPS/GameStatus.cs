@@ -1,13 +1,13 @@
 using System;
 
-namespace HeroPerks
+namespace RPSGameStatus
 {
     [Flags]
-    enum Perks
+    enum GameStatus
     {
-        WaterBreathing = 1 << 0,
-        Stealth = 1 << 1,
-        AutoHeal = 1 << 2,
-        DoubleJump = 1 << 3
+        Draw = 1 << 0,
+        Player1Wins = 1 << 1,
+        Player2Wins = 1 << 2
+
     }
 }
